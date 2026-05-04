@@ -20,7 +20,7 @@ class Person(object):
 
 
 def print_nametag(format_string, person):
-    print(format_string.format(person=person))
+    print(format_string.format(person=person), "asdasd{person}")
 
 
 def fetch_website(urllib_version, url):

